@@ -1,6 +1,6 @@
 import random
 
-def generate_random_integer(min, max):
+def generate_random_integer(min_value, max_value):
     """
     Generate a random integer between min_value and max_value.
     
@@ -20,7 +20,7 @@ def generate_random_operator():
     Returns:
     str: A random arithmetic operator.
     """
-    return random.choice(['+', '-', '*']
+    return random.choice(['+', '-', '*'])  # Fixed the missing closing parenthesis
 
 
 def evaluate_expression(n1, n2, operator):
